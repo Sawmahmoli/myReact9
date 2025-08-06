@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    width: 250px;
+    margin: 20px;
+    transition: all .25s;
+    border-radius: 7px
+
+
+}
+
+.card:hover {
+    transform: translateX(10px);
+    transform: translateY(10px);
+    transform:rotate(0.5deg);
+    /* transition: */
+    box-shadow: 5px 5px 10px #c0c0c0
+}
+
+img {
+    width: 100%;
+    object-fit: cover;  /* 原圖等比例縮放 */
+    border-radius: 7px 7px 0 0
+
+}
+
+.card-title {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.btn {
+    color: white;
+    text-decoration: none;
+    background-color: rgb(41, 114, 141);
+    padding: 12px;
+    border-radius: 999px;
+    display: block;
+    text-align: center;
+}
+
+.card-text {
+    margin-bottom: 20px;
+}
+
+.card-body {
+    /* border:1px solid rgb(41, 114, 141);  */
+    padding: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
