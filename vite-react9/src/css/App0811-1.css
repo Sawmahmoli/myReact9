@@ -1,12 +1,12 @@
 * {
-    margin: 5px;
+    margin: 0px;
     padding: 0;
 }
 
 .wrap{
-    border: 1px solid black;
-    border-radius: 7px 7px 0 0;
-
+    margin: 20px;
+    border:1px solid #d0d0d0;
+    border-radius: 10px;
 }
 
 .title{
@@ -14,26 +14,16 @@
     justify-content: center;
     font-size: 36px;
     padding: 10px;
-    border-radius: 7px 7px 0 0;
+    border-radius: 10px 10px 0 0;
     background-color: #f0f0f0;
 }
 
 .cardbox{
     display: flex;
-    justify-content: center;
-    padding: 10px;
-
-}
-
-
-.cardbox {
-    display: flex;
     align-items: center;
     justify-content: center;
-    border:1px solid black;
-
+    border-top :1px solid #d0d0d0;
 }
-
 
 .card {
     display: flex;
@@ -44,13 +34,14 @@
 }
 
 .date{
-    display: flex;
-    align-items: center;
     font-size: 24px;
 }
 
 .time{
     font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
 
