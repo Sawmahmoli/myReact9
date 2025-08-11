@@ -39,40 +39,46 @@ const App = () => {
                     <div className="card">
                         <div className='date'>11日</div>
                         <div className='time'>
-                            上午6:00<br />~<br />下午6:00<br />
+                            <div>上午6:00</div>
+                            <div>~</div>
+                            <div>下午6:00</div>
                         </div>
                         <div className='img'>
                             {/* 天氣圖:使用執行路徑，所以要將圖片放在divublic資料夾中才讀得到 */}
                             <img src='./weatherIcon/晴午後短暫雷陣雨.svg' alt="..." />
                         </div>
                         <div className='desc'>晴午後短暫雷陣雨</div>
-                        <div className='chace'><IoIosUmbrella />80%</div>  {/* import icon */}
+                        <div className='chance'><IoIosUmbrella /> 80%</div>  {/* import icon */}
                     </div>
 
                     <div className="card">
                         <div className='date'>11日</div>
                         <div className='time'>
-                            上午6:00<br />~<br />下午6:00<br />
+                            <div>下午6:00</div>
+                            <div>~</div>
+                            <div>上午6:00</div>
                         </div>
                         <div className='img'>
                             {/* 天氣圖:使用執行路徑，所以要將圖片放在divublic資料夾中才讀得到 */}
-                            <img src='./weatherIcon/晴午後短暫雷陣雨.svg' alt="..." />
+                            <img src='./weatherIcon/多雲短暫陣雨.svg' alt="..." />
                         </div>
-                        <div className='desc'>晴午後短暫雷陣雨</div>
-                        <div className='chace'><IoIosUmbrella />80%</div>  {/* import icon */}
+                        <div className='desc'>多雲短暫陣雨</div>
+                        <div className='chance'><IoIosUmbrella /> 40%</div>  {/* import icon */}
                     </div>
 
                     <div className="card">
-                        <div className='date'>11日</div>
+                        <div className='date'>12日</div>
                         <div className='time'>
-                            上午6:00<br />~<br />下午6:00<br />
+                            <div>上午6:00</div>
+                            <div>~</div>
+                            <div>下午6:00</div>
                         </div>
                         <div className='img'>
                             {/* 天氣圖:使用執行路徑，所以要將圖片放在divublic資料夾中才讀得到 */}
-                            <img src='./weatherIcon/晴午後短暫雷陣雨.svg' alt="..." />
+                            <img src='./weatherIcon/多雲午後短暫雷陣雨.svg' alt="..." />
                         </div>
-                        <div className='desc'>晴午後短暫雷陣雨</div>
-                        <div className='chace'><IoIosUmbrella />80%</div>  {/* import icon */}
+                        <div className='desc'>多雲午後短暫雷陣雨</div>
+                        <div className='chance'><IoIosUmbrella /> 40%</div>  {/* import icon */}
                     </div>
 
                 </div>
