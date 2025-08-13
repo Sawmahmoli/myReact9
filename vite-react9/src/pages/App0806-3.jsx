@@ -1,6 +1,6 @@
 import Card from '../components/Card'
 
-import'../css/App0806-1.css'
+import '../css/App0806-1.css'
 const App = () => {
     // 資料抽離
     // 建立物件資料
