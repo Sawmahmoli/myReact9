@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="inputKeyin">
+    <script>
+        let myInput=document.querySelector('#inputKeyin')
+
+        // change事件
+        myInput.addEventListener('change', (e)=>{
+            console.log(e.target.value);
+        })
+
+        // 內容異動 => 即時觸發
+        myInput.addEventListener('keyup', (e)=>{
+        console.log(e.target.value);
+        })
+
+
+    </script>
+</body>
+</html>
