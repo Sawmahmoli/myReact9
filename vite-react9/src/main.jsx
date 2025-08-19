@@ -6,7 +6,7 @@ import { HashRouter } from 'react-router-dom'
 // import './sass/all.scss'
 // import App from './pages/Home.jsx'  // 記得加上副檔名
 
-import App from './pages/App0818.jsx'
+import App from './pages/App0819c.jsx'
 
 createRoot(document.getElementById('root')).render(
   // 嚴謹模式
