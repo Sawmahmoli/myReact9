@@ -12,9 +12,12 @@ const TodoWrapper = () => {
     // 避免異動資料時造成索引值錯亂 => 陣列改為陣列物件！
     // 使用亂數產生 key
 
+    // 判定todo內容是否被點擊 => 增加isCompleted屬性
+    // 判定todo內容是否被修改 => 增加isEdit屬性
+
     const [todos, setTodos] = useState(
         [
-            { content: 'parking fee!', id: Math.random(), isCompleted: false },
+            { content: 'parking fee!', id: Math.random(), isCompleted: false, isEdit: false },
             { content: 'invoice', id: Math.random(), isCompleted: false },
         ]
     );
@@ -28,21 +31,40 @@ const TodoWrapper = () => {
         }))
     }
 
-    // 建立修改todo
-    // const editTodo=()
 
     // 建立切換isCompleted的函式
     // isCompleted => false
     // isCompleted => true
-
     const toggleCompleted = (id) => {
         // 檢查 => 被點擊項目的id是否跟陣列中相同
         // (y) => 1.取出todo => 2.將isCompleted屬性反向(NOT)
         // (n) => todo不變
-
         setTodos(todos.map((todo) => {
             return todo.id === id
                 ? { ...todo, isCompleted: !todo.isCompleted }
+                : todo
+        }))
+    }
+
+    // 建立切換isEdit屬性的函式
+    // isEdit => false
+    // isEdit => true
+    const toggleIsEdit = (id) => {
+        // 檢查 => 被點擊項目的id是否跟陣列中相同
+        // (y) => 1.取出todo => 2.將isEdit屬性反向(NOT)
+        // (n) => todo不變
+        setTodos(todos.map((todo) => {
+            return todo.id === id
+                ? { ...todo, isEdit: !todo.isEdit }
+                : todo
+        }))
+    }
+
+    // 建立修改todo的函式
+    const editTodo = (id, editContent) => {
+        setTodos(todos.map((todo) => {
+            return todo.id === id
+                ? { ...todo, content: editContent, isEdit: false }
                 : todo
         }))
     }
@@ -65,7 +87,12 @@ const TodoWrapper = () => {
 
             {
                 todos.map((todo) => {
-                    return <Todo todo={todo} key={todo.id} delTodo={deltodo} toggleCompleted={toggleCompleted} />
+                    return <Todo todo={todo} key={todo.id}
+                        delTodo={deltodo}
+                        toggleCompleted={toggleCompleted}
+                        toggleIsEdit={toggleIsEdit}
+                        editTodo={editTodo}
+                    />
 
                 })
             }

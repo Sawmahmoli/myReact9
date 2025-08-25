@@ -47,13 +47,14 @@ body {
 }
 
 .create-form>button {
-    font-size: 1.2rem;
+    font-size: 1rem;
     border: none;
     background-color: #999;
     color: #333;
-    width: 45px;
+    width: 60px;
     height: 100%;
     cursor: pointer;
+    padding: 0 10px;
 }
 
 .todo {
