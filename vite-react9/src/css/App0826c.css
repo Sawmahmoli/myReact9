@@ -1,0 +1,28 @@
+a {
+    text-decoration: none;
+    color: salmon;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.ttpShow {
+    display: none;
+}
+
+#ttpPanel {
+    color: salmon;
+    background-color: #fff;
+    width: 200px;
+    text-align: left;
+    border: 3px solid salmon;
+    z-index: 99;
+    padding: 15px;
+    display: none;
+    position: absolute;
+}
+
+img{
+    width: 50%;
+}

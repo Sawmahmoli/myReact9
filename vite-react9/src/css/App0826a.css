@@ -1,0 +1,21 @@
+.zoom {
+    width: 300px;
+    border: 2px solid chocolate;
+    display: inline-block;
+    margin: 100px;
+    overflow: hidden;
+}
+
+/* .zoom:hover img{
+    transform: scale(1.2);
+} */
+
+.imgScale img {
+    transform: scale(1.2);
+}
+
+img {
+    width: 100%;
+    vertical-align: sub;
+    transition: all 1.2s;
+}
